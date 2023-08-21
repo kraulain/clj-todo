@@ -1,4 +1,5 @@
-(ns webdev.core)
+(ns webdev.core
+  (require [ring.adapter.jetty :as jetty]))
 
 (defn foo
   "I don't do a whole lot."
