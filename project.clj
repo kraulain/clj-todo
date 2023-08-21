@@ -6,4 +6,6 @@
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [ring "1.10.0"]]
   :main webdev.core
+  :profiles {:dev
+             {:main webdev.core/-dev-main}}
   :repl-options {:init-ns webdev.core})
