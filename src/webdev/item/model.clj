@@ -24,7 +24,7 @@
                 description]))))
 
 (defn update-item [db id checked]
-  (= [1] (db/execture!
+  (= [1] (db/execute!
         db
         ["UPDATE items
      SET checked = ?
@@ -45,3 +45,4 @@
    ["SELECT id, name, description, checked, date_created
      FROM items
      ORDER BY date_created"]))
+
